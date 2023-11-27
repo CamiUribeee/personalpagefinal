@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #111625;
+}
+:root{
+    --padding-container: 100px 0;
+    --percent100: 50%;
+    --fw3: 100;
+}
+.header-main{
+    background-color: #341931;
+    padding: 1.5em 0; 
+    /* Ahí no puse margin bottom porque no quiero que haya espacio entre la caja y la imagen */
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* padding: var(--padding-container); */
+}
+/* nav */
+.nav{
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_title{
+    font-weight: 300;
+}
+
+.nav_link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav_items{
+    list-style: none;
+}
+
+.nav_links{
+    color: #a731ec;
+    text-decoration: none;
+}
+
+.header-main .right{
+    flex: 1;
+}
+form{
+    position: relative;
+}
+form.search input{
+    line-height: 3.25em;
+    padding: 0 7em 0 4.5 em;
+    border: 0;
+    outline: 0;
+    width: var(--percent100) ;
+    border-radius: 7px;
+    font-size: 0.9em;
+    font-weight: var(--fw3);
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px;
+    background-color: #d3bec5;
+}
+form.search :where(button) {
+    position: absolute;
+    top: 0;
+    padding: 0.55em 1.5em;
+    font-size: 1em;
+    margin: 50px;
+    border-radius: 7px;
+}
+.right_search{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+.right_img{
+    display: block;
+    width: 30px;
+}
+.container-fondo{
+    background-image: url(https://images.unsplash.com/photo-1582188886038-0359ac9d69a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #341931;
+    text-align: right;
+    padding: 35px;
+    height: 400px;
+}
+.descuentos{
+    margin: 50px;
+}
+.titulo{
+    margin: 30px;
+    text-align: center;
+    font-size: xx-large;
+    color: #a731ec;
+}
+.novedades1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a731ec;
+}
+.novedades2{
+    width: 28%;
+    text-align: center;
+}
+.novedades2 img{
+    width: 90%;
+}
+.novedades2 h3{
+    margin: 10px 0;
+}
+
+.novedades2 p{
+    font-weight: 300;
+}
+
+
+.footer {
+    background-color:#a731ec;
+}
+
+.footer_title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.footer_title, .footer_info{
+    color: #fff;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
+}
+
+.nav--footer{
+    padding-bottom: 20px;
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.nav_link--footer{
+    display: flex;
+    margin: 0;
+    margin-right: 20px;
+    flex-wrap: wrap;    
+}
+
+.footer_inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+.footer_input{
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer_submit{
+    margin-left: auto;
+    display: inline-block;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #2091f9;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.footer_copy{
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer_copyright{
+    font-weight: 300;
+}
+
+.footer_icons{
+    margin-bottom: 10px;
+}
+
+.footer_img{
+    width: 30px;
+}
+
+
+
+
+
+
+
