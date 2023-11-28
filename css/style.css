@@ -164,7 +164,71 @@ form.search :where(button) {
     margin-right: 20px;
     flex-wrap: wrap;    
 }
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.testimony{
+    background-color:#db9cff;
+}
 
+.testimony_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.testimony_body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.testimony_body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimony_img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.testimony_texts{
+    max-width: 700px;
+}
+.testimony__review > a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.testimony_course{
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+
+.testimony_arrow{
+    width: 90%;
+    cursor: pointer;
+}
 .footer_inputs{
     margin-top: 10px;
     display: flex;
@@ -212,6 +276,30 @@ form.search :where(button) {
 
 .footer_img{
     width: 30px;
+}
+.info-apartado{
+    width: 100%;
+    text-align: center;
+}
+.info-apartado h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px; 
+    padding: 5px;
+}
+.info-apartado > a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+}
+.info-apartado > a:hover {
+    background-color:#a731ec;
+    transition: all ease-in-out .4s;
 }
 
 

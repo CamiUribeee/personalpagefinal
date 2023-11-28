@@ -23,13 +23,10 @@
             </div>
             <ul class="nav_link nav_link_menu">
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Novedades</a>
+                    <a href="#novedades_especiales" class="nav_links">Novedades</a>
                 </li>
                 <li class="nav_items">
-                    <a href="#" class="nav_links">Guitarras</a>
-                </li>
-                <li class="nav_items">
-                    <a href="#" class="nav_links">Accesorios</a>
+                    <a href="#productos_disponibles" class="nav_links">Productos</a>
                 </li>
                 <li class="nav_items">
                     <a href="#social_media" class="nav_links">Redes Sociales</a>
@@ -53,7 +50,7 @@
         <h1>Lo mejor de ValKila para ti</h1>
     </div>
 
-    <div class="descuentos">
+    <div class="descuentos" id="novedades_especiales">
         <div class="contenedor">
             <h2 class="titulo">Nuevos modelos con precios especiales</h2>
             <div class="novedades1">
@@ -79,7 +76,84 @@
         </div>
     </div>
 
-    
+    <section class="testimony" id="productos_disponibles">
+        <div class="testimony_container container">
+            
+            <img src="icons/leftarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="before">                
+            
+            <section class="testimony_body testimony_body--show" data-id="1">
+                <div class="testimony_texts">
+                    <h2 class="subtitle">TG 530 GUITARRA ELÉCTRICA TAGIMA
+                        <span class="testimony_course">$1.044.050,00</span>
+                    </h2>
+                    <p class="testimony__review">
+                        <a href="#">☆ MATERIAL DEL CUERPO: Basswood</a>
+                        <a href="#">☆ MATERIAL DE CUELLO: Arce</a>
+                        <a href="#">☆ TRASTES: Arce con 22 trastes y puntos negros</a>
+                        <a href="#">☆ CONTROLES: Interruptor de recogida de 5 posiciones, 1 volumen, 2 controles de tono</a>
+                    </p>
+                </div>
+                <figure class="testimony_picture">
+                    <img src="img/productof1.jpg" alt="Foto instrumento" class="testimony_img">
+                </figure>
+            </section>
+            
+            <section class="testimony_body" data-id="2">
+                <div class="testimony_texts">
+                    <h2 class="subtitle">AMPLIFICADOR FRONTMAN 10G FENDER
+                        <span class="testimony_course">$494.100,00</span>
+                    </h2>
+                    <p class="testimony__review">
+                        <a href="#">☆ ALTAVOZ: 6</a>
+                        <a href="#">☆ INTERRUPTOR DE OVERDRIVE </a>
+                        <a href="#">☆ MÁXIMA POTENCIA</a>
+                    </p>
+                </div>
+                <figure class="testimony_picture">
+                    <img src="img/productof2.jpg" alt="Foto accesorio" class="testimony_img">
+                </figure>
+            </section>
+
+            <section class="testimony_body" data-id="3">
+                <div class="testimony_texts">
+                    <h2 class="subtitle">MULTI-STAND 5 ESPACIOS FENDER
+                        <span class="testimony_course">$346.500,00</span>
+                    </h2>
+                    <p class="testimony__review">
+                        <a href="#">☆ MARCO DE ACERO RESISTENTE</a>
+                        <a href="#">☆ ACOLCHADO DE ESPUMA</a>
+                    </p>
+                </div>
+                <figure class="testimony_picture">
+                    <img src="img/productof3.jpg" alt="Foto accesorio" class="testimony_img">
+                </figure>
+            </section>
+
+            <section class="testimony_body" data-id="4">
+                <div class="testimony_texts">
+                    <h2 class="subtitle">GS MINI SAPELE ACÚSTICA TAYLOR
+                        <span class="testimony_course">$2.605.500,00</span>
+                    </h2>
+                    <p class="testimony__review">
+                        <a href="#">☆ TAPA SÓLIDA DE ABETO SITKA</a>
+                        <a href="#">☆ AROS Y FONDO DE SAPELI EN CAPAS</a>
+                        <a href="#">☆ ESCALA CORTA</a>
+                    </p>
+                </div>
+                <figure class="testimony_picture">
+                    <img src="img/productof4.jpg" alt="Foto instrumento" class="testimony_img">
+                </figure>
+            </section>
+
+            <img src="icons/rightarrow.svg" alt="Icon Flecha" class="testimony_arrow" id="next">                
+
+        </div>
+    </section>
+
+
+
+
+
     <footer class="footer" id="social_media">
         <section class="footer_container container">
             <nav class="nav nav--footer">
@@ -90,6 +164,15 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="info-apartado">
+                <h4>Nosotros</h4>
+                <a href="#">Carrera 26 # 100 -88</a>
+                <a href="#">Bogotá - Colombia</a>
+                <a href="#">+57 (314)471-7552</a>
+                <a href="#">camirzzz26@gmail.com</a>
+            </div>
+
             <form class="footer_form">
                 <h2 class="footer_info">Suscribete</h2>
                 <div class="footer_inputs">
@@ -108,6 +191,8 @@
             <h3 class="footer_copyright">Derechos reservados &copy; Camila Uribe</h3>
         </section>
     </footer>
+
+    <script src="JS/slider.js"></script>
 
    
     
